@@ -73,7 +73,8 @@ while True:
         # add logic here to read an email
      list_emails(inbox)
 
-     #defensive check
+     #defensive check - catch errors arising from user entering non-integer
+     # or number outside index range of emails in the inbox
      while True:
        try:
            index = int(input("Select the index of the email you would like to read"))
